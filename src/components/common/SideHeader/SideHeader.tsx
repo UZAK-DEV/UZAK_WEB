@@ -11,6 +11,10 @@ const SideHeader = () => {
           <CustomLink isActive={false} url="/" text="친구" />
           <CustomLink isActive={false} url="/" text="설정" />
         </div>
+        <div className="SideHeaderForm-LogsList">
+          <CustomLink isActive={true} url="/login" text="로그인 하기" />
+          <CustomLink isActive={true} url="/register" text="회원가입 하기" />
+        </div>
       </div>
     </>
   );

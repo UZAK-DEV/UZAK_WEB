@@ -8,9 +8,9 @@ import {
 } from "../../config/config.json";
 import useOauth from "../../hooks/common/Oauth/useOauth";
 import AuthInput from "../common/Input/AuthInput";
+import AuthButton from "../common/Button/AuthButton";
 const Register = () => {
   const { tryNaverLogin } = useOauth();
-  const code = new URL(window.location.href).searchParams.get("code");
   useEffect(() => {
     tryNaverLogin();
   }, [tryNaverLogin]);
@@ -25,24 +25,16 @@ const Register = () => {
           <div className="RegisterForm-Options-inputs">
             <div className="RegisterForm-Options-inputs-id">
               <div className="RegisterForm-Options-inputs-id-title">아이디</div>
-              <AuthInput placeholder="" type="text" />
+              <AuthInput placeholder="" type="text" width="100%" />
             </div>
             <div className="RegisterForm-Options-inputs-pw">
               <div className="RegisterForm-Options-inputs-pw-title">
                 비밀번호
               </div>
-              {/* <div className="RegisterForm-Options-inputs-pw-inputDiv">
-                <input
-                  type="password"
-                  className="RegisterForm-Options-inputs-pw-inputDiv-input"
-                />
-              </div> */}
-              <AuthInput placeholder="" type="password" />
+              <AuthInput placeholder="" type="password" width="100%" />
             </div>
             <div className="RegisterForm-Options-inputs-submitDiv">
-              <button className="RegisterForm-Options-inputs-submitDiv-button">
-                다음
-              </button>
+              <AuthButton text="다음" width="100%" />
             </div>
           </div>
           <div className="RegisterForm-Options-Line"></div>

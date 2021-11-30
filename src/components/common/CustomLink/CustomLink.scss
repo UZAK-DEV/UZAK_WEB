@@ -1,0 +1,38 @@
+.CustomLink {
+  width: 100%;
+  display: flex;
+  margin-bottom: 26px;
+  box-sizing: border-box;
+  &-Icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-Img {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  }
+  &-Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-Btn {
+      color: #d9dde1;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Noto Sans CJK KR;
+      font-style: normal;
+      font-weight: 900;
+    }
+  }
+}
+.actived {
+  color: #33395b;
+}

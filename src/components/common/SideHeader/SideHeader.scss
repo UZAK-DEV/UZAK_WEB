@@ -1,0 +1,22 @@
+.SideHeaderForm {
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  padding: 32px;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 0px 10px rgba(89, 172, 255, 0.1);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  &-title {
+    color: #007dfa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+  &-MainList {
+    margin-bottom: 370px;
+  }
+}

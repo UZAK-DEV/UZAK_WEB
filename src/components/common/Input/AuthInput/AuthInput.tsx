@@ -27,6 +27,7 @@ const AuthInput = ({
           type={type}
           placeholder={placeholder}
           className="AuthInput-Input"
+          style={{ width: width }}
         />
       </div>
     </>
