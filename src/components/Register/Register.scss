@@ -1,0 +1,15 @@
+body {
+  padding: 0%;
+  margin: 0;
+}
+.RegisterForm {
+  width: 100%;
+  height: 100vh;
+  &-background {
+    width: 100%;
+    height: 300px;
+    background-color: #f8fafd;
+    z-index: -100;
+    position: absolute;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "OAUTH_GOOGLE_CLIENTID": "346506688152-a0k8ntj08eg617hn518d9hlp95v4ej0c.apps.googleusercontent.com",
+  "OAUTH_NAVER_CLIENTID": "7HvOHpYFuQx9YUbVzpmF",
+  "OAUTH_NAVER_CALLBACK_URL": "http://localhost:3000",
+  "OAUTH_KAKAO_CLIENTID": "c9f4d38316c5202bfedcdb92b30a2d0d",
+  "OAUTH_KAKAO_REDIRECT_URL": "http://localhost:3000/oauth/callback/kakao",
+  "OAUTH_KAKAO_AUTH_URL": "https://kauth.kakao.com/oauth/authorize?client_id=c9f4d38316c5202bfedcdb92b30a2d0d&redirect_uri=http://localhost:3000/oauth/callback/kakao&response_type=code"
+}
