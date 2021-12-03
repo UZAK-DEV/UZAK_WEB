@@ -9,7 +9,7 @@ const AuthButton = ({ text, width }: AuthButtonProps): JSX.Element => {
   return (
     <>
       <div className="AuthButton" style={{ width: width }}>
-        <button className="AuButton-Btn" style={{ width: width }}>
+        <button className="AuthButton-Btn" style={{ width: width }}>
           {text}
         </button>
       </div>

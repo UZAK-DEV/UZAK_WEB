@@ -1,4 +1,4 @@
-import { ChangeEvent, KeyboardEvent } from "react";
+import React, { ChangeEvent, KeyboardEvent } from "react";
 import "./AuthInput.scss";
 
 export interface AuthInputProps {
@@ -10,6 +10,8 @@ export interface AuthInputProps {
   padding?: string;
   fontSize?: string;
   width?: string;
+  setFocus: React.Dispatch<React.SetStateAction<string>>;
+  inputName: string;
 }
 
 const AuthInput = ({
@@ -19,6 +21,8 @@ const AuthInput = ({
   onChangeValue,
   onKeyDown,
   width,
+  setFocus,
+  inputName,
 }: AuthInputProps): JSX.Element => {
   return (
     <>
@@ -28,6 +32,9 @@ const AuthInput = ({
           placeholder={placeholder}
           className="AuthInput-Input"
           style={{ width: width }}
+          onClick={() => {
+            setFocus(inputName);
+          }}
         />
       </div>
     </>
