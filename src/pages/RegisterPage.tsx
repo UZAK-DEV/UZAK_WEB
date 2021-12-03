@@ -1,4 +1,4 @@
-import Register from "../components/Register";
+import Register from "../components/Register/RegisterMain";
 import SideHeader from "../components/common/SideHeader";
 
 const RegisterPage = () => {

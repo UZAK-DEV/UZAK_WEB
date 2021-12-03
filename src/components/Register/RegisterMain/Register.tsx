@@ -5,14 +5,16 @@ import GoogleLogin from "react-google-login";
 import {
   OAUTH_GOOGLE_CLIENTID,
   OAUTH_KAKAO_AUTH_URL,
-} from "../../config/config.json";
-import useOauth from "../../hooks/common/Oauth/useOauth";
-import AuthInput from "../common/Input/AuthInput";
-import AuthButton from "../common/Button/AuthButton";
-import OAuthButton from "../common/Button/OAuthButton";
+} from "../../../config/config.json";
+import BackgroundCard from "../../common/BackgroundCard";
+import useOauth from "../../../hooks/common/Oauth/useOauth";
+import useRegister from "../../../hooks/Register/useRegister";
+import AuthInput from "../../common/Input/AuthInput";
+import AuthButton from "../../common/Button/AuthButton";
+import OAuthButton from "../../common/Button/OAuthButton";
 
 const Register = () => {
-  const [focus, setFocus] = useState<string>("");
+  const { focus, setFocus } = useRegister();
   // const { tryNaverLogin } = useOauth();
   // useEffect(() => {
   //   tryNaverLogin();
@@ -20,9 +22,7 @@ const Register = () => {
   return (
     <>
       <div className="RegisterForm">
-        <div className="RegisterForm-background">
-          {/* <img src="" alt="" className="RegisterForm-background-img" /> */}
-        </div>
+        <BackgroundCard />
         <div className="RegisterForm-Options">
           <div className="RegisterForm-Options-title">회원가입</div>
           <div className="RegisterForm-Options-inputs">
@@ -63,7 +63,7 @@ const Register = () => {
               />
             </div>
             <div className="RegisterForm-Options-inputs-submitDiv">
-              <AuthButton text="다음" width="100%" />
+              <AuthButton text="다음" width="100%" path="/register/email" />
             </div>
           </div>
           <div className="RegisterForm-Options-Line"></div>
