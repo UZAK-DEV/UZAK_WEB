@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Rectangle from "../../../assets/img/Rectangle.png";
+import Rectangle from "../../../assets/img/sideIcon.png";
 import "./CustomLink.scss";
 
 export interface CustomLinkProps {
