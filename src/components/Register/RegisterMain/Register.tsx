@@ -42,6 +42,7 @@ const Register = () => {
                 width="100%"
                 setFocus={setFocus}
                 inputName="id"
+                textType="kr"
               />
             </div>
             <div className="RegisterForm-Options-inputs-pw">
@@ -60,6 +61,7 @@ const Register = () => {
                 width="100%"
                 setFocus={setFocus}
                 inputName="password"
+                textType="kr"
               />
             </div>
             <div className="RegisterForm-Options-inputs-submitDiv">

@@ -28,10 +28,11 @@ const RegisterEmail = () => {
                 width="100%"
                 setFocus={setFocus}
                 inputName="email"
+                textType="eng"
               />
             </div>
             <div className="RegisterEmailForm-Options-inputs-submitDiv">
-              <AuthButton text="다음" width="100%" path="/" />
+              <AuthButton text="다음" width="100%" path="/register/info" />
             </div>
           </div>
         </div>
