@@ -1,0 +1,19 @@
+.GenderButton {
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 50px;
+  &-Btn {
+    font-size: 16px;
+    font-family: Noto Sans CJK KR;
+    font-style: normal;
+    font-weight: 600;
+    height: 100%;
+    border: none;
+    width: 100%;
+    // background: #007dfa;
+    color: #d9dde1;
+    background: #f4f6f8;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+}
