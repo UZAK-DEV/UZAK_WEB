@@ -12,6 +12,7 @@ export interface AuthInputProps {
   width?: string;
   setFocus: React.Dispatch<React.SetStateAction<string>>;
   inputName: string;
+  textType: string;
 }
 
 const AuthInput = ({
@@ -23,6 +24,7 @@ const AuthInput = ({
   width,
   setFocus,
   inputName,
+  textType,
 }: AuthInputProps): JSX.Element => {
   return (
     <>
@@ -30,7 +32,9 @@ const AuthInput = ({
         <input
           type={type}
           placeholder={placeholder}
-          className="AuthInput-Input"
+          className={
+            textType === "kr" ? "AuthInput-Input kr" : "AuthInput-Input eng"
+          }
           style={{ width: width }}
           onClick={() => {
             setFocus(inputName);

@@ -14,7 +14,6 @@ const AuthButton = ({ text, width, path }: AuthButtonProps): JSX.Element => {
       <div className="AuthButton" style={{ width: width }}>
         <button
           className="AuthButton-Btn"
-          style={{ width: width }}
           onClick={() => {
             navigate(path);
           }}
