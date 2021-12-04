@@ -41,7 +41,7 @@ const Register = () => {
                 type="text"
                 width="100%"
                 setFocus={setFocus}
-                inputName="id"
+                inputName="eng"
                 textType="kr"
               />
             </div>
@@ -65,7 +65,12 @@ const Register = () => {
               />
             </div>
             <div className="RegisterForm-Options-inputs-submitDiv">
-              <AuthButton text="다음" width="100%" path="/register/email" />
+              <AuthButton
+                text="다음"
+                width="100%"
+                path="/register/email"
+                type="register"
+              />
             </div>
           </div>
           <div className="RegisterForm-Options-Line"></div>

@@ -20,7 +20,12 @@ const RegisterSuccess = () => {
             회원가입을 <br /> 완료했습니다.
           </div>
           <div className="RegitserSuccessForm-Options-submitDiv">
-            <AuthButton text="시작하기" width="100%" path="/login" />
+            <AuthButton
+              text="시작하기"
+              width="100%"
+              path="/login"
+              type="register"
+            />
           </div>
         </div>
       </div>

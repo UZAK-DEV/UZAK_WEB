@@ -68,7 +68,12 @@ const RegisterInfo = () => {
               </div>
             </div>
             <div className="RegisterInfoForm-Options-inputs-submitDiv">
-              <AuthButton text="다음" width="100%" path="/register/success" />
+              <AuthButton
+                text="다음"
+                width="100%"
+                path="/register/success"
+                type="register"
+              />
             </div>
           </div>
         </div>

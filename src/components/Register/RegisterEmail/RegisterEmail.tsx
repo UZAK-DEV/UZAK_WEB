@@ -32,7 +32,12 @@ const RegisterEmail = () => {
               />
             </div>
             <div className="RegisterEmailForm-Options-inputs-submitDiv">
-              <AuthButton text="다음" width="100%" path="/register/info" />
+              <AuthButton
+                text="다음"
+                width="100%"
+                path="/register/info"
+                type="register"
+              />
             </div>
           </div>
         </div>
